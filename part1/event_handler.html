@@ -8,18 +8,19 @@
   <div id="root"></div>
   <script type="text/babel">
     const rootElement = document.getElementById("root");
-    const state = { keyword: "", typing: false, result: "" };
 
-    const handleChange = (event) => {
-      setState({ typing: true, keyword: event.target.value });
-    };
-    const handleClick = () => {
-      setState({
-        typing: false,
-        result: `We find results of ${state.keyword}`
-      });
-    };
+    const state = { keyword: "", typing: false, result: "" };
     const App = () => {
+
+      const handleChange = (event) => {
+        setState({ typing: true, keyword: event.target.value });
+      };
+      const handleClick = () => {
+        setState({
+          typing: false,
+          result: `We find results of ${state.keyword}`
+        });
+      };
       return (
         <>
           <input onChange={handleChange} />
