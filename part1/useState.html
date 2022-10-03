@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <div id="root"></div>
+  <script type="text/babel">
+    const rootElement = document.getElementById("root");
+
+    const App = () => {
+      console.log('render')
+      const [keyword, setKeyword] = React.useState(()=>{
+        // useState에 함수를 넣으면 lazy하게 값을 가져올 수 있다.
+        // 기존에 저장되어 있는 값을 가져올 경우 무거운 데이터를 느리게 가져올 수 있다. 이럴때 사용하면 좋다.
+        console.log('initialize')
+        return window.localStorage.getItem("keyword")});
+      const [typing, setTyping] = React.useState(false);
+      const [result, setResult] = React.useState("")
+
+      
+      React.useEffect(()=>{
+        console.log("effect")
+        window.localStorage.setItem("keyword", keyword)
+      },[keyword])
+
+      const handleChange = (event) => {
+        
+        
+        setKeyword(event.target.value)
+        setTyping(true)
+      };
+      const handleClick = () => {
+        setTyping(false)
+        setResult(`We find results of ${keyword}`)
+      };
+      return (
+        <>
+          <input onChange={handleChange} value={keyword}/>
+          <button onClick={handleClick}>search</button>
+          <p>
+            {typing ? `Looking for ${keyword}...` : result}
+            </p>
+        </>
+      );
+    };
+    ReactDOM.render(<App />, rootElement);
+  </script>
+</body>
+
+</html>
