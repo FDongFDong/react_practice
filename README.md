@@ -19,6 +19,7 @@ ___
 - 이름은 use로 시작하고 Camel case로 작성한다.
 ___
 ## 16. Hook flow 1
+Source code: [Hook flow1](https://github.com/FdongFdong/react_practice/blob/main/part1/16_Hook_flow1.html)
 - useEffect
   - 선언해둔 위치에 따라서 호출되는 순서가 달라진다.
   - Render가 끝난 다음에 useEffect가 불린다.
@@ -27,7 +28,6 @@ ___
   - useState로 만들어진 함수는 이전 값을 가지고 들어온다.
     - setState 시 prev이 주입된다.
     - 이전 값(초기값)을 가지고 상태를 변경할 수 있다.
-### flow  
 
 - App Render 시작
 - App useState 동작
@@ -36,6 +36,7 @@ ___
 
 ___
 ## 17. Hook flow 2
+Source code: [Hook flow2](https://github.com/FdongFdong/react_practice/blob/main/part1/17_Hook_flow2.html)
 
 - 자식이 없을 경우
   1. 부모 Render 시작
