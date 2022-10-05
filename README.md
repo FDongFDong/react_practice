@@ -83,6 +83,6 @@ useEffect함수에서 리턴을 하면 clean up이 동작된다.
   4. 부모 useEffect 동작
 ___
 ## 19. Element 스타일 입히기
-Source code [Element 스타일 입히기](https://github.com/FdongFdong/react_practice/blob/main/part1/19.Element_Style.html)
+> Source code :[Element 스타일 입히기](https://github.com/FdongFdong/react_practice/blob/main/part1/19.Element_Style.html)
 1. className은 문자열이다.
 2. style은 객체, 카멜케이스, className보다 우선순위가 높다.
