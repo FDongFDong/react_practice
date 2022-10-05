@@ -86,3 +86,5 @@ ___
 
 1. className은 문자열이다.
 2. style은 객체, 카멜케이스, className보다 우선순위가 높다.
+
+## 20. Ref로 DOM 다루기
