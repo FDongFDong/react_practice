@@ -80,3 +80,8 @@ useEffect함수에서 리턴을 하면 clean up이 동작된다.
      1. 자식 useEffect [Clean up] 동작
   3. 부모 useEffect [Clean up] 동작
   4. 부모 useEffect 동작
+___
+## 19. Element 스타일 입히기
+
+1. className은 문자열이다.
+2. style은 객체, 카멜케이스, className보다 우선순위가 높다.
