@@ -58,7 +58,7 @@ ___
 useEffect함수에서 리턴을 하면 clean up이 동작된다.
 - useEffect에 기능을 넣어뒀을 경우 리액트가 알아서 종료시켜주게 할 수 있다.
   - 언마운트 될 때 로컬스토리지를 지우라는 등의 명령을 할 수 있음
-- 
+
 
 
 1. 부모 Render 시작
@@ -69,7 +69,7 @@ useEffect함수에서 리턴을 하면 clean up이 동작된다.
     3. 자식 Render 종료
 4. 부모 useEffect [Celan up] 동작
  
-   4. 자식 useEffect 동작
+   1. 자식 useEffect 동작
 5. 부모 useEffect 동작
   
 
