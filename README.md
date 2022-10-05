@@ -16,6 +16,7 @@ ___
 ## customHook
 - 반복되는 것은 함수로 만든다(프로그래밍 기본적인 생각)
   -  Hook 또한 반복적으로 실행되면 customHook으로 만들어서 반복되는 작업을 줄여준다.
+- 이름은 use로 시작하고 Camel case로 작성한다.
 ___
 ## 16. Hook flow 1
 - useEffect
