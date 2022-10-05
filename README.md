@@ -16,3 +16,13 @@
 ## customHook
 - 반복되는 것은 함수로 만든다(프로그래밍 기본적인 생각)
   -  Hook 또한 반복적으로 실행되면 customHook으로 만들어서 반복되는 작업을 줄여준다.
+
+## 16. Hook flow
+- useEffect
+  - 선언해둔 위치에 따라서 호출되는 순서가 달라진다.
+  - Render가 끝난 다음에 useEffect가 불린다.
+  - useEffect(sideEffect: 부수효과): 사이드 이펙트이기 때문에 다 그려진 후 이펙트가 동작을 한다.
+- useState
+  - useState로 만들어진 함수는 이전 값을 가지고 들어온다.
+    - setState 시 prev이 주입된다.
+    - 이전 값(초기값)을 가지고 상태를 변경할 수 있다.

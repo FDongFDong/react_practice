@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <div id="root"></div>
+  <script type="text/babel">
+    const rootElement = document.getElementById("root");
+
+    const App = () =>{
+      console.log("APP Render Start")
+      const [show, setShow] = React.useState(() => {
+        // lazy initialize하기 위해 함수로 변경
+        console.log("App useState call")
+        return false;
+      })
+      // 1. 선언해둔 위치에 따라서 호출되는 순서가 바뀐다.
+      // 2. Render가 끝난 다음에 useEffect가 불린다.
+      // 3. useEffect(sideEffect: 부수효과): 사이드 이펙트이기 때문에 다 그려진 후 이펙트가 동작을 한다.
+      React.useEffect(() => {
+        console.log("App useEffect, empty deps")
+      },[])
+
+      React.useEffect(() =>{
+        console.log("App useEffect no deps")
+      })
+      React.useEffect(() => {
+        console.log("App useEffect, [show]")
+      }, [show])
+
+      const handleClick = () =>{
+        // useState로 만들어진 함수는 이전 값을 가지고 들어온다.
+        // - setState 시 prev이 주입된다.
+        // - 이전 값(초기값)을 가지고 상태를 변경할 수 있다.
+        setShow((prev) => !prev)
+      }
+      return (<>
+        <button onClick={handleClick}>Search</button>
+        {
+          show ? <> 
+          <input />
+          <p></p>
+          </> : null
+        } 
+      </>)
+    }     
+    ReactDOM.render(<App />, rootElement)
+    console.log("APP Render End")
+  </script>
+</body>
+
+</html>
