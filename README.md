@@ -96,3 +96,11 @@ DOM 조작하기
 왜? 리액트는 useRef라는 별도의 방법을 제공할까?
 1. 리액트는 바닐라 스크립트와 다르게 virtual DOM 등을 이용해 DOM을 조작한다.
 2. document를 직접 이용해 DOM에 도달하면 리액트 자체적으로 비효율이 나올 수 있다고 생각하기 때문에 -> 리액트 자체적인 최적화를 위해
+
+## 21. Form 1
+
+1. Form은 onSubmit을 이용해서 기능을 부여한다.
+2. submit할 때 새로고침이 일어나니 preventDefault()로 새로고침이 일어나지 않게 해준다.
+3. 리액트에서는 for 대신 htmlFor를 사용해야한다.
+4. 기본 값을 넣기 위해서는 value가 아닌 defaultValue를 사용해야 한다.
+5. console.div(element)을 하면 구조를 확인할 수 있다.

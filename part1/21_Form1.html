@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <div id="root"></div>
+  <script type="text/babel">
+    const rootElement = document.getElementById("root");
+    const App = () => {
+      const handleSubmit = (event) =>{
+        event.preventDefault();
+        console.dir(event.target)
+        // alert(`FirstName : ${event.target[0].value} LastName : ${event.target[1].value}` )
+        alert(`FirstName : ${event.target.elements.fname.value} choosed Car : ${event.target.elements.cars.value}`)
+      }
+      return (
+        <>
+          <form onSubmit={handleSubmit}>
+          <label htmlFor="fname">First name:</label><br />
+          <input type="text" id="fname" name="fname" defaultValue="John" /><br />
+          <label htmlFor="cars">Choose a car:</label>
+            <select id="cars" name="cars">
+              <option defaultValue="volvo">Volvo</option>
+              <option defaultValue="saab">Saab</option>
+              <option defaultValue="fiat">Fiat</option>
+              <option defaultValue="audi">Audi</option>
+            </select>
+              <input type="submit" value="Submit"/>
+          </form> 
+        </>
+      )
+    }
+    ReactDOM.render(<App />, rootElement);
+  </script>
+</body>
+
+</html>
