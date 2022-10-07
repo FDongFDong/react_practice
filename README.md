@@ -104,3 +104,8 @@ DOM 조작하기
 3. 리액트에서는 for 대신 htmlFor를 사용해야한다.
 4. 기본 값을 넣기 위해서는 value가 아닌 defaultValue를 사용해야 한다.
 5. console.div(element)을 하면 구조를 확인할 수 있다.
+
+## 22. Form 2
+
+1. validation 체크는 onChange에서 하면 편리하다
+2. input 태그의 value를 리액트 컴포넌트에서 관리하는 것을 말한다.
