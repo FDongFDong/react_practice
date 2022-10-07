@@ -84,11 +84,13 @@ useEffect함수에서 리턴을 하면 clean up이 동작된다.
 ___
 ## 19. Element 스타일 입히기
 > Source code : [Element 스타일 입히기](https://github.com/FdongFdong/react_practice/blob/main/part1/19.Element_Style.html)
+
 1. className은 문자열이다.
 2. style은 객체, 카멜케이스, className보다 우선순위가 높다.
 ___
 ## 20. Ref로 DOM 다루기
 > Source code : [RefHook으로 DOM 다루기](https://github.com/FdongFdong/react_practice/blob/main/part1/20_Ref_DOM.html)
+
 DOM 조작하기
 
 방법 1. document.getElementById
