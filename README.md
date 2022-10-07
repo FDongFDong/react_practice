@@ -115,7 +115,7 @@ ___
 ___
 ## 23.Error
 다양한 에러들이 일어날 수 있으며 자바스크립트에 대한 에러가 리액트에서 나타날 수도 있다.
-> Source code : [Error 다루기] (https://github.com/FdongFdong/react_practice/blob/main/part1/23_Error.html)
+> Source code : [Error 다루기](https://github.com/FdongFdong/react_practice/blob/main/part1/23_Error.html)
 
 1. class 컴포넌트로 ErrorBoundary를 만들어서 Error이 생기는 컴포넌트를 제어할 수 있다.
    - 함수형 컴포넌트로 만들지 못하는 이유는 에러를 처리하는 함수(getDerivedStateFromError())를 클래스 컴포넌트가 제공하기 때문이다.
