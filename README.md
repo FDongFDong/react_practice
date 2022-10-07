@@ -106,15 +106,16 @@ ___
 3. 리액트에서는 for 대신 htmlFor를 사용해야한다.
 4. 기본 값을 넣기 위해서는 value가 아닌 defaultValue를 사용해야 한다.
 5. console.div(element)을 하면 구조를 확인할 수 있다.
-
+___
 ## 22. Form 2
 > Source code : [Form 다루기 2](https://github.com/FdongFdong/react_practice/blob/main/part1/22_Form2.html)
 
 1. validation 체크는 onChange에서 하면 편리하다
 2. input 태그의 value를 리액트 컴포넌트에서 관리하는 것을 말한다.
-
+___
 ## 23.Error
 다양한 에러들이 일어날 수 있으며 자바스크립트에 대한 에러가 리액트에서 나타날 수도 있다.
+> Source code : [Error 다루기] (https://github.com/FdongFdong/react_practice/blob/main/part1/23_Error.html)
 
 1. class 컴포넌트로 ErrorBoundary를 만들어서 Error이 생기는 컴포넌트를 제어할 수 있다.
 
