@@ -83,12 +83,12 @@ useEffect함수에서 리턴을 하면 clean up이 동작된다.
   4. 부모 useEffect 동작
 ___
 ## 19. Element 스타일 입히기
-> Source code : [Element 스타일 입히기] (https://github.com/FdongFdong/react_practice/blob/main/part1/19.Element_Style.html)
+> Source code : [Element 스타일 입히기](https://github.com/FdongFdong/react_practice/blob/main/part1/19.Element_Style.html)
 1. className은 문자열이다.
 2. style은 객체, 카멜케이스, className보다 우선순위가 높다.
 ___
 ## 20. Ref로 DOM 다루기
-> Source code : [RefHook으로 DOM 다루기] (https://github.com/FdongFdong/react_practice/blob/main/part1/20_Ref_DOM.html)
+> Source code : [RefHook으로 DOM 다루기](https://github.com/FdongFdong/react_practice/blob/main/part1/20_Ref_DOM.html)
 DOM 조작하기
 
 방법 1. document.getElementById
@@ -99,7 +99,7 @@ DOM 조작하기
 2. document를 직접 이용해 DOM에 도달하면 리액트 자체적으로 비효율이 나올 수 있다고 생각하기 때문에 -> 리액트 자체적인 최적화를 위해
 ___
 ## 21. Form 1
-> Source code : [Form 다루기 1] (https://github.com/FdongFdong/react_practice/blob/main/part1/21_Form1.html)
+> Source code : [Form 다루기 1](https://github.com/FdongFdong/react_practice/blob/main/part1/21_Form1.html)
 
 1. Form은 onSubmit을 이용해서 기능을 부여한다.
 2. submit할 때 새로고침이 일어나니 preventDefault()로 새로고침이 일어나지 않게 해준다.
@@ -108,7 +108,7 @@ ___
 5. console.div(element)을 하면 구조를 확인할 수 있다.
 ___
 ## 22. Form 2
-> Source code : [Form 다루기 2] (https://github.com/FdongFdong/react_practice/blob/main/part1/22_Form2.html)
+> Source code : [Form 다루기 2](https://github.com/FdongFdong/react_practice/blob/main/part1/22_Form2.html)
 
 1. validation 체크는 onChange에서 하면 편리하다
 2. input 태그의 value를 리액트 컴포넌트에서 관리하는 것을 말한다.
