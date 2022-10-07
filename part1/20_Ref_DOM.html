@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <div id="root"></div>
+  <script type="text/babel">
+    const rootElement = document.getElementById("root");
+    const App = () =>{
+      const divRef = React.useRef();
+
+      const inputRef = React.useRef();
+      
+      React.useEffect(()=>{
+        // 바닐라 스크립트로 조작하기
+        // document.getElementById("textBox").focus()
+        
+        // 리액트 Hook으로 조작하기
+        // current로 접근할 수 있다.
+        inputRef.current.focus();
+        setTimeout(()=>{
+          divRef.current.style.backgroundColor="pink";
+        }, 1000) 
+      },[])
+      return (
+        <>
+          <div>
+            <input id="textBox"/>
+          </div>
+          <div>
+            <input ref={inputRef}/>
+            <div
+              ref={divRef} 
+              style={{height: 100, width:300, backgroundColor: "brown"}}>
+            </div>
+          </div>
+        </>
+      )
+    }
+    ReactDOM.render(<App />, rootElement);
+  </script>
+</body>
+</html>

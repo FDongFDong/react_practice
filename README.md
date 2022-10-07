@@ -88,3 +88,11 @@ ___
 2. style은 객체, 카멜케이스, className보다 우선순위가 높다.
 
 ## 20. Ref로 DOM 다루기
+DOM 조작하기
+
+방법 1. document.getElementById
+방법 2. useRef Hook 사용하기
+
+왜? 리액트는 useRef라는 별도의 방법을 제공할까?
+1. 리액트는 바닐라 스크립트와 다르게 virtual DOM 등을 이용해 DOM을 조작한다.
+2. document를 직접 이용해 DOM에 도달하면 리액트 자체적으로 비효율이 나올 수 있다고 생각하기 때문에 -> 리액트 자체적인 최적화를 위해
