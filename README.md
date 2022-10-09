@@ -1,6 +1,6 @@
 # React_practice
 
-### Part 1
+## Part 1
 - [useState](#useState)
 - [useEffect](#useEffect)
 - [customHook](#customHook)
@@ -11,6 +11,10 @@
 - [Error handling](#Error-handling)
 - [key와 Rerendering](#key와-Rerendering)
 - [상태 끌어올리기](#상태-끌어올리기)
+- [Data Fetch](#Data-Fetch)
+
+## Part 2
+- [Date 다루기](#Date-다루기)
 ___
 ## PART 1_
 ___
@@ -144,14 +148,14 @@ ___
 3. index를 보통 사용하지만 index의 순서가 바뀔 수 있는 경우 사용하지 않는 것과 같은 결과를 보여준다.
 
 ___
-## 상태 끌어올리기 (State lifting up)
+## 상태 끌어올리기
 > Source code : [상태 끌어올리기](https://github.com/FdongFdong/react_practice/blob/main/part1/27_state_lifting_up.html)
 
 1. 자식 컴포넌트의 상태 값을 부모 컴포넌트가 사용하려면 상태를 끌어올려야한다.(Lifting up)
 2. 과도한 Lifting up을 하면 과도한 drilling을 야기한다.(깔끔하지 못하고 복잡해진다.)
 ___
 
-## 28. Data Fetch
+## Data Fetch
 > Source code : [Data Fetch](https://github.com/FdongFdong/react_practice/blob/main/part1/28_data_fetch.html)
 
 1. Fetch api -> 네트워크 통신 도구
@@ -161,7 +165,7 @@ ___
 ## PART 2
 ___
 
-## 1. Date
+## Date 다루기
 > Source code : [Date 다루기]()
 [moment.js](https://momentjs.com/)
 
