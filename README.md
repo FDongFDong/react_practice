@@ -2,11 +2,8 @@
 
 ### Part 1
 - [useState](#useState)
-
 - [useEffect](#useEffect)
-
 - [customHook](#customHook)
-
 - [Hookflow](#Hook-flow-1)
 ___
 ## PART 1_
