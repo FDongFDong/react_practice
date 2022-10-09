@@ -164,7 +164,7 @@ ___
 1. Fetch api -> 네트워크 통신 도구
 2. 상황별 핸들링 -> Loading, Data, Error
 ___
-
+___
 ## PART 2: React 라이브러리
 ___
 
