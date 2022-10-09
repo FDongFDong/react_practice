@@ -29,7 +29,7 @@ ___
   -  Hook 또한 반복적으로 실행되면 customHook으로 만들어서 반복되는 작업을 줄여준다.
 - 이름은 use로 시작하고 Camel case로 작성한다.
 ___
-## 16. Hook flow 1
+## Hook flow 1
 > Source code: [Hook flow1](https://github.com/FdongFdong/react_practice/blob/main/part1/16_Hook_flow1.html)
 - useEffect
   - 선언해둔 위치에 따라서 호출되는 순서가 달라진다.
@@ -46,7 +46,7 @@ ___
 - App useEffect 동작
 
 ___
-## 17. Hook flow 2
+## Hook flow 2
 > Source code: [Hook flow2](https://github.com/FdongFdong/react_practice/blob/main/part1/17_Hook_flow2.html)
 
 - 자식이 없을 경우
