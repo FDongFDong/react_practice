@@ -9,8 +9,8 @@
 - [Ref로 DOM 다루기](#Ref로-DOM-다루기)
 - [Form 다루기 1](#Form-다루기-1)
 - [Error handling](#Error-handling)
-- [key와 Rerendering](#key와 Rerendering)
-- [상태 끌어올리기](#상태 끌어올리기)
+- [key와 Rerendering](#key와-Rerendering)
+- [상태 끌어올리기](#상태-끌어올리기)
 ___
 ## PART 1_
 ___
