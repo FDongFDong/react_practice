@@ -123,7 +123,7 @@ ___
    - 함수형 컴포넌트로 만들지 못하는 이유는 에러를 처리하는 함수(getDerivedStateFromError())를 클래스 컴포넌트가 제공하기 때문이다.
 
 ## 25, 26. key와 Rerendering 
-> Source code : [key와 Rerendering]
+> Source code : [key와 Rerendering](https://github.com/FdongFdong/react_practice/blob/main/part1/26_key_rerendering.html)
 
 1. key 값은 고유하게 식별할 수 있는 값을 사용해야한다.
 2. index를 보통 사용하지만 index의 순서가 바뀔 수 있는 경우 사용하지 않는 것과 같은 결과를 보여준다.
