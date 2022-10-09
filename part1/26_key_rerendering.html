@@ -14,29 +14,29 @@
       {id : 2, value : "Clean the bed"},
       {id : 3, value : "Running"},
       {id : 4, value : "Learning"}
-    ], [
+    ], 
+    [
       { id: 4, value: "Learning" },
-        { id: 1, value: "Wash dishes" },
-        { id: 2, value: "Clean the bed" },
-        { id: 3, value: "Running" }
-      ],
-      [
-        { id: 3, value: "Running" },
-        { id: 4, value: "Learning" },
-        { id: 2, value: "Clean the bed" },
-        { id: 1, value: "Wash dishes" }
-      ],
-      [
-        { id: 2, value: "Clean the bed" },
-        { id: 3, value: "Running" },
-        { id: 4, value: "Learning" },
-        { id: 1, value: "Wash dishes" }
-      ]
+      { id: 1, value: "Wash dishes" },
+      { id: 2, value: "Clean the bed" },
+      { id: 3, value: "Running" }
+    ],
+    [
+      { id: 3, value: "Running" },
+      { id: 4, value: "Learning" },
+      { id: 2, value: "Clean the bed" },
+      { id: 1, value: "Wash dishes" }
+    ],
+    [
+      { id: 2, value: "Clean the bed" },
+      { id: 3, value: "Running" },
+      { id: 4, value: "Learning" },
+      { id: 1, value: "Wash dishes" }
+    ]
   ];
     const App = () => {
       const [items, setItems] = React.useState(todos[0]);
       // 랜덤하게 설정
-      // 
       React.useEffect(()=>{
         const interval = setInterval(()=>{
           const random = Math.floor(Math.random() * 3);
