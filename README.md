@@ -1,4 +1,6 @@
 # React_practice
+
+[useEffect](#useEffect)
 ___
 ## PART 1_
 ___
