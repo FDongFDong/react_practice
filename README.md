@@ -130,7 +130,7 @@ ___
 
 
 ## 27. 상태 끌어올리기 (State lifting up)
-> Source code : [상태 끌어올리기] (https://github.com/FdongFdong/react_practice/blob/main/part1/27_state_lifting_up.html)
+> Source code : [상태 끌어올리기](https://github.com/FdongFdong/react_practice/blob/main/part1/27_state_lifting_up.html)
 
 1. 자식 컴포넌트의 상태 값을 부모 컴포넌트가 사용하려면 상태를 끌어올려야한다.(Lifting up)
 2. 과도한 Lifting up을 하면 과도한 drilling을 야기한다.(깔끔하지 못하고 복잡해진다.)
