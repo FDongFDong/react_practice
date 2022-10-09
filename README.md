@@ -1,6 +1,6 @@
 # React_practice
 
-## Part 1
+## PART 1: React 기초
 - [useState](#useState)
 - [useEffect](#useEffect)
 - [customHook](#customHook)
@@ -13,10 +13,9 @@
 - [상태 끌어올리기](#상태-끌어올리기)
 - [Data Fetch](#Data-Fetch)
 
-## Part 2
+## PART 2: React 라이브러리
 - [Date 다루기](#Date-다루기)
-___
-## Part1: React 기초
+
 ___
 ## useState
 - 상태를 관리한다.
