@@ -135,3 +135,8 @@ ___
 1. 자식 컴포넌트의 상태 값을 부모 컴포넌트가 사용하려면 상태를 끌어올려야한다.(Lifting up)
 2. 과도한 Lifting up을 하면 과도한 drilling을 야기한다.(깔끔하지 못하고 복잡해진다.)
 ___
+
+## 28. Data Fetch
+> Source code : [Data Fetch]()
+
+___
