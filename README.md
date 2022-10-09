@@ -1,5 +1,7 @@
 # React_practice
 ___
+## PART 1_
+___
 ## useState
 - 상태를 관리한다.
 - 초기값을 넣어줘야한다. 
@@ -143,3 +145,22 @@ ___
 1. Fetch api -> 네트워크 통신 도구
 2. 상황별 핸들링 -> Loading, Data, Error
 ___
+
+## PART 2
+___
+
+## 1. Date
+> Source code : [Date 다루기]()
+[moment.js](https://momentjs.com/)
+
+최근 트렌드를 충족시키지 못해 새로운 기능을 만들지 않겠다고 함.
+- 사이즈가 큰 라이브러리
+  - 리액트 보다도 큰 라이브러리다
+- mutable한 구조
+- tree shaking 알고리즘이 제대로 작동하지 않음
+
+1. Summer Time 표기
+2. Leap 표기(윤년)
+3. 타임 존에 따른 날짜 및 시간 표기하기
+4. 날짜에 따른 요일 찾기
+5. 날짜 비교하기
