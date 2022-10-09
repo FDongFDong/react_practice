@@ -20,6 +20,7 @@
     - [Moment.js 사용하기](#momentjs-사용하기)
     - [Day.js 사용하기](#dayjs-사용하기)
     - [Date-fns.js 사용하기](#date-fns)
+  - [스타일링 라이브러리](#스타일링-라이브러리)
 
 ___
 ### useState
@@ -210,3 +211,22 @@ ___
 - Most comprehensive
 - Immutable & Pure & FP & I18n
 - 라이브러리 사이즈는 적당히 크나 특정 함수만 사용하면 작은 용량으로 사용 가능하다.(Functional 해서 가능한 일)
+___
+
+### 스타일링 라이브러리
+
+CSS의 문제점(React를 쓰면서)
+
+- Global Namespace: 글로벌 변수를 지양해야하는 JS와 대치
+- Dependencies: CSS간의 의존성 관리
+- Dead Code Elimination: 안쓰는 CSS를 찾아내기 어려움 -> 불필요한 사이즈를 키운다
+- Minification: 클래스 이름 최소화
+- Sharing Constants: JS의 코드와 값을 공유하고 싶음
+- Non-deterministic Resolution: CSS 파일 로드 타이밍 이슈
+- Isolaion: 격리
+
+#### styled-component
+[styled-component 홈페이지](https://styled-components.com/)
+
+- Extending Styles : 스타일도 상속하여 쓸 수 있다.
+- 
