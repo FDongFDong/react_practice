@@ -16,7 +16,7 @@
 ## Part 2
 - [Date 다루기](#Date-다루기)
 ___
-## PART 1_
+## Part1: React 기초
 ___
 ## useState
 - 상태를 관리한다.
@@ -162,7 +162,7 @@ ___
 2. 상황별 핸들링 -> Loading, Data, Error
 ___
 
-## PART 2
+## PART 2: React 라이브러리
 ___
 
 ## Date 다루기
