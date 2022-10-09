@@ -19,7 +19,7 @@ ___
 - 이름은 use로 시작하고 Camel case로 작성한다.
 ___
 ## 16. Hook flow 1
-> Source code: [Hook flow1] (https://github.com/FdongFdong/react_practice/blob/main/part1/16_Hook_flow1.html)
+> Source code: [Hook flow1](https://github.com/FdongFdong/react_practice/blob/main/part1/16_Hook_flow1.html)
 - useEffect
   - 선언해둔 위치에 따라서 호출되는 순서가 달라진다.
   - Render가 끝난 다음에 useEffect가 불린다.
