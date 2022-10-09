@@ -170,7 +170,7 @@ ___
 
 ### Date 다루기
 > Source code : [Date 다루기](https://github.com/FdongFdong/react_practice/tree/main/part2/date)
-
+___
 #### Moment.js 사용하기
 [moment.js 홈페이지](https://momentjs.com/)
 
@@ -185,7 +185,7 @@ ___
 3. 타임 존에 따른 날짜 및 시간 표기하기
 4. 날짜에 따른 요일 찾기
 5. 날짜 비교하기
-
+___
 
 #### Day.js 사용하기
 [day.js 홈페이지](https://day.js.org/docs/en/installation/installation)
