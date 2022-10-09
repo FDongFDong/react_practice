@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <div id="root"></div>
+  <script type="text/babel">
+    const rootElement = document.getElementById("root");
+    const todos =[
+    [
+      {id : 1, value : "Wash dishes"},
+      {id : 2, value : "Clean the bed"},
+      {id : 3, value : "Running"},
+      {id : 4, value : "Learning"}
+    ], [
+      { id: 4, value: "Learning" },
+        { id: 1, value: "Wash dishes" },
+        { id: 2, value: "Clean the bed" },
+        { id: 3, value: "Running" }
+      ],
+      [
+        { id: 3, value: "Running" },
+        { id: 4, value: "Learning" },
+        { id: 2, value: "Clean the bed" },
+        { id: 1, value: "Wash dishes" }
+      ],
+      [
+        { id: 2, value: "Clean the bed" },
+        { id: 3, value: "Running" },
+        { id: 4, value: "Learning" },
+        { id: 1, value: "Wash dishes" }
+      ]
+  ];
+    const App = () => {
+      const [items, setItems] = React.useState(todos[0]);
+      // 랜덤하게 설정
+      // 
+      React.useEffect(()=>{
+        const interval = setInterval(()=>{
+          const random = Math.floor(Math.random() * 3);
+          setItems(todos[random])
+
+        },1000)
+        return () =>{
+          clearInterval(interval)
+        }
+      },[])
+      const handleDoneClick = (todo) =>{
+        setItems(items =>items.filter((item)=>{
+          return item !== todo
+        }))
+      }
+      const handleResotreClick = () => {
+        setItems(() =>{
+          return [...items, todos.find((item) => !items.includes(item))]
+        })
+      }
+      return ( 
+        <>
+          {items.map((todo, index) => 
+            // 랜덤한 컴포넌트를 불러올 때
+            // key를 주지않으면 
+            //    버튼 내부에 있는 텍스트만 변경이되어서 포커스는 버튼에 멈춰있으며 리렌더링되는 것을 확인할 수 있음
+            // key를 주면 
+            //    컴포넌트 자체를 바꿔준다.
+            // map에 있는 index를 주면 매번 랜덤한 컴포넌트들이 와서 유일함이 깨진다. key를 주지 않은 상태와 동일
+            // 컴포넌트의 순서가 바껴도 변하지 않는 값, 특정할 수 있는 값, 유일한 값을 key로 줘야한다.
+            <div key={todo.value}>
+              <button onClick={() => handleDoneClick(todo)}>
+                {todo.value}
+              </button>
+            </div>
+            )}
+            <br/>
+            <br/>
+            <button onClick ={handleResotreClick}>Restore</button>
+        </>
+      )
+    }
+    ReactDOM.render(<App />, rootElement);
+  </script>
+</body>
+
+</html>
