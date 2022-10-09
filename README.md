@@ -209,4 +209,4 @@ ___
 - 기능 Coverage가 가장 높다.
 - Most comprehensive
 - Immutable & Pure & FP & I18n
-- 라이브러리 사이즈는 적당히 크나 특정 함수만 사용하면 작게도 사용 가능하다.
+- 라이브러리 사이즈는 적당히 크나 특정 함수만 사용하면 작은 용량으로 사용 가능하다.(Functional 해서 가능한 일)
