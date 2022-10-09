@@ -194,6 +194,7 @@ ___
 
 
 #### Day.js 사용하기
+[day.js 홈페이지](https://day.js.org/docs/en/installation/installation)
 
 - 사이즈가 moment.js 대비 상당히 작다
 - 문서도 정갈함
