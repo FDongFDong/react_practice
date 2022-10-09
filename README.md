@@ -214,7 +214,7 @@ ___
 ___
 
 ### 스타일링 라이브러리
-
+> Source code : [Date 다루기](https://github.com/FdongFdong/react_practice/tree/main/part2/styling)
 CSS의 문제점(React를 쓰면서)
 
 - Global Namespace: 글로벌 변수를 지양해야하는 JS와 대치
@@ -229,4 +229,11 @@ CSS의 문제점(React를 쓰면서)
 [styled-component 홈페이지](https://styled-components.com/)
 
 - Extending Styles : 스타일도 상속하여 쓸 수 있다.
-- 
+- Automatic critical CSS: 자동 style indects & 코드 스플릿
+- No Class name bugs: 이름이 유니크하며 overlap 되지 않는다.  misspellings도 문제 생기지 않게 해준다
+- Easier deletion of CSS: 지우고 쓰기가 쉽다.
+- Simple dynamic styling: props / global theme
+- Painless maintenance: 컴포넌트들이 스타일링하는것을 한번에 볼 수 있다
+- Automatic vendor prefixing
+- 스타일을 style 태그로 분리한다.
+- styled.{element}`` 형태로 사용한다.
