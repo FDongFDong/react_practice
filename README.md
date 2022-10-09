@@ -121,16 +121,17 @@ ___
 
 1. class 컴포넌트로 ErrorBoundary를 만들어서 Error이 생기는 컴포넌트를 제어할 수 있다.
    - 함수형 컴포넌트로 만들지 못하는 이유는 에러를 처리하는 함수(getDerivedStateFromError())를 클래스 컴포넌트가 제공하기 때문이다.
-
+___
 ## 25, 26. key와 Rerendering 
 > Source code : [key와 Rerendering](https://github.com/FdongFdong/react_practice/blob/main/part1/26_key_rerendering.html)
 
 1. key 값은 고유하게 식별할 수 있는 값을 사용해야한다.
 2. index를 보통 사용하지만 index의 순서가 바뀔 수 있는 경우 사용하지 않는 것과 같은 결과를 보여준다.
 
-
+___
 ## 27. 상태 끌어올리기 (State lifting up)
 > Source code : [상태 끌어올리기](https://github.com/FdongFdong/react_practice/blob/main/part1/27_state_lifting_up.html)
 
 1. 자식 컴포넌트의 상태 값을 부모 컴포넌트가 사용하려면 상태를 끌어올려야한다.(Lifting up)
 2. 과도한 Lifting up을 하면 과도한 drilling을 야기한다.(깔끔하지 못하고 복잡해진다.)
+___
