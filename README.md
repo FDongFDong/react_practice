@@ -225,7 +225,7 @@ CSS의 문제점(React를 쓰면서)
 - Sharing Constants: JS의 코드와 값을 공유하고 싶음
 - Non-deterministic Resolution: CSS 파일 로드 타이밍 이슈
 - Isolaion: 격리
-
+___
 #### styled-component
 [styled-component 홈페이지](https://styled-components.com/)
 
