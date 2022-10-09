@@ -1,13 +1,13 @@
 # React_practice
 
 ### Part 1
-[useState](#useState)
+- [useState](#useState)
 
-[useEffect](#useEffect)
+- [useEffect](#useEffect)
 
-[customHook](#customHook)
+- [customHook](#customHook)
 
-[Hookflow](#Hook-flow-1)
+- [Hookflow](#Hook-flow-1)
 ___
 ## PART 1_
 ___
