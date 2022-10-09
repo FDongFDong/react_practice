@@ -137,7 +137,7 @@ ___
 ___
 
 ## 28. Data Fetch
-> Source code : [Data Fetch]()
+> Source code : [Data Fetch](https://github.com/FdongFdong/react_practice/blob/main/part1/28_data_fetch.html)
 
 1. Fetch api -> 네트워크 통신 도구
 2. 상황별 핸들링 -> Loading, Data, Error
