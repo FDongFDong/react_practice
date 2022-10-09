@@ -18,13 +18,12 @@
     - [key와 Rerendering](#key와-rerendering)
     - [상태 끌어올리기](#상태-끌어올리기)
     - [Data Fetch](#data-fetch)
-  - [PART 2: React 라이브러리](#part-2-react-라이브러리-1)
+
+
+## PART 2: React 라이브러리
     - [Date 다루기](#date-다루기)
       - [Moment.js 사용하기](#momentjs-사용하기)
       - [Day.js 사용하기](#dayjs-사용하기)
-
-## PART 2: React 라이브러리
-- [Date 다루기](#Date-다루기)
 
 ___
 ### useState
