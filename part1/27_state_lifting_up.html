@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <div id="root"></div>
+  <script type="text/babel">
+    const rootElement = document.getElementById("root");
+     // App의 자식이자 Password 컴포넌트의 형제
+    const Id = ({ handleIdChange }) => { 
+        return <>
+          <label>ID :</label>
+          <input onChange={handleIdChange} />
+        </>
+      }
+      // App의 자식이자 Id 컴포넌트의 형제
+    const Password = ({ handlePasswordChange }) => {   
+        return <>
+          <label>PW :</label>
+          <input type="password" onChange={handlePasswordChange} />
+        </>
+      }
+    const App = () => {
+      const [id, setId] = React.useState("")
+      const [password, setPassword] = React.useState("");
+      const handleIdChange = (event) => {
+        setId(event.target.value);
+        console.log(`id length: ${event.target.value.length > 0}`)
+
+      }
+
+      const handlePasswordChange = (event) => {
+        setPassword(event.target.value);
+        console.log(`password length: ${event.target.value.length > 0}`)
+      }
+      const handleLoginClick = () =>{
+        alert(`id: ${id}, pw : ${password}`)
+      }
+      return (
+        <>
+          {/* 상태 끌어올리기 */}
+          <Id handleIdChange ={handleIdChange}/>
+          <br />
+          {/* 상태 끌어올리기 */}
+          <Password handlePasswordChange ={handlePasswordChange}/>
+          <button disabled={id.length === 0 || password.length === 0} onClick={handleLoginClick}>LOGIN</button>
+        </>
+      )
+    }
+    ReactDOM.render(<App />, rootElement);
+  </script>
+</body>
+
+</html>
