@@ -167,7 +167,7 @@ ___
 ### Date 다루기
 > Source code : [Date 다루기](https://github.com/FdongFdong/react_practice/tree/main/part2/date)
 
-#### moment.js 
+#### moment.js 홈페이지
 [moment.js](https://momentjs.com/)
 
 최근 트렌드를 충족시키지 못해 새로운 기능을 만들지 않겠다고 함.
