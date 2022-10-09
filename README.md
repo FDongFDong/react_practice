@@ -125,8 +125,9 @@ ___
 ## 25, 26. key와 Rerendering 
 > Source code : [key와 Rerendering](https://github.com/FdongFdong/react_practice/blob/main/part1/26_key_rerendering.html)
 
-1. key 값은 고유하게 식별할 수 있는 값을 사용해야한다.
-2. index를 보통 사용하지만 index의 순서가 바뀔 수 있는 경우 사용하지 않는 것과 같은 결과를 보여준다.
+1. key는 value를 특정하는 이름이다.
+2. key 값은 고유하게 식별할 수 있는 값을 사용해야한다.
+3. index를 보통 사용하지만 index의 순서가 바뀔 수 있는 경우 사용하지 않는 것과 같은 결과를 보여준다.
 
 ___
 ## 27. 상태 끌어올리기 (State lifting up)
