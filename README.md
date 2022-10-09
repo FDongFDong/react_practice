@@ -19,6 +19,7 @@
   - [Date 다루기](#date-다루기)
     - [Moment.js 사용하기](#momentjs-사용하기)
     - [Day.js 사용하기](#dayjs-사용하기)
+    - [Date-fns.js 사용하기](#date-fns)
 
 ___
 ### useState
@@ -198,8 +199,8 @@ ___
 - Tree shaking은 안된다.
 - 지원 Locale 작성 기준일 138개
 
-
-#### Date-fns 1
+___
+#### Date-fns
 [date-fns 홈페이지](https://date-fns.org/)
 
 - day.js, moment.js는 객체지향이고 Date-fns는 functional이다.
