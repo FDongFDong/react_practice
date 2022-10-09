@@ -17,7 +17,7 @@ const MomentExample = () => {
 
   return (
     <div>
-      <h1>Moment</h1>
+      <h1>Moment.js</h1>
       <div>Imutable Check</div>
       <div>
         {momentDate.format()}

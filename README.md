@@ -173,12 +173,14 @@ ___
 ___
 #### Moment.js 사용하기
 [moment.js 홈페이지](https://momentjs.com/)
+[moment.js You don't need](https://github.com/you-dont-need/You-Dont-Need-Momentjs)
 
 최근 트렌드를 충족시키지 못해 새로운 기능을 만들지 않겠다고 함.
 - 사이즈가 큰 라이브러리
   - 리액트 보다도 큰 라이브러리다
 - mutable한 구조
 - tree shaking 알고리즘이 제대로 작동하지 않음
+- 지원 locale 123개
 
 1. Summer Time 표기
 2. Leap 표기(윤년)
@@ -190,7 +192,20 @@ ___
 #### Day.js 사용하기
 [day.js 홈페이지](https://day.js.org/docs/en/installation/installation)
 
-- 사이즈가 moment.js 대비 상당히 작다
+- 라이브러리 사이즈가 상당히 작다
 - 문서도 정갈함
 - 간단한 기능들을 적용할 떄는 좋음 moment -> dayjs로 이름만 바꿔도 거의 동작함
 - Tree shaking은 안된다.
+- 지원 Locale 작성 기준일 138개
+
+
+#### Date-fns 1
+[date-fns 홈페이지](https://date-fns.org/)
+
+- day.js, moment.js는 객체지향이고 Date-fns는 functional이다.
+- Tree shaking 가능
+- 지원 locale 작성 기준일 64개
+- 기능 Coverage가 가장 높다.
+- Most comprehensive
+- Immutable & Pure & FP & I18n
+- 라이브러리 사이즈는 적당히 크나 특정 함수만 사용하면 작게도 사용 가능하다.
