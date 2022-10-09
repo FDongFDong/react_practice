@@ -6,6 +6,11 @@
 - [customHook](#customHook)
 - [Hookflow](#Hook-flow-1)
 - [Element 스타일 입히기](#Element-스타일-입히기)
+- [Ref로 DOM 다루기](#Ref로-DOM-다루기)
+- [Form 다루기 1](#Form-다루기-1)
+- [Error handling](#Error-handling)
+- [key와 Rerendering](#key와 Rerendering)
+- [상태 끌어올리기](#상태 끌어올리기)
 ___
 ## PART 1_
 ___
@@ -97,7 +102,7 @@ ___
 1. className은 문자열이다.
 2. style은 객체, 카멜케이스, className보다 우선순위가 높다.
 ___
-## 20. Ref로 DOM 다루기
+## Ref로 DOM 다루기
 > Source code : [RefHook으로 DOM 다루기](https://github.com/FdongFdong/react_practice/blob/main/part1/20_Ref_DOM.html)
 
 DOM 조작하기
@@ -109,7 +114,7 @@ DOM 조작하기
 1. 리액트는 바닐라 스크립트와 다르게 virtual DOM 등을 이용해 DOM을 조작한다.
 2. document를 직접 이용해 DOM에 도달하면 리액트 자체적으로 비효율이 나올 수 있다고 생각하기 때문에 -> 리액트 자체적인 최적화를 위해
 ___
-## 21. Form 1
+## Form 다루기 1
 > Source code : [Form 다루기 1](https://github.com/FdongFdong/react_practice/blob/main/part1/21_Form1.html)
 
 1. Form은 onSubmit을 이용해서 기능을 부여한다.
@@ -118,20 +123,20 @@ ___
 4. 기본 값을 넣기 위해서는 value가 아닌 defaultValue를 사용해야 한다.
 5. console.div(element)을 하면 구조를 확인할 수 있다.
 ___
-## 22. Form 2
+## Form 다루기 2
 > Source code : [Form 다루기 2](https://github.com/FdongFdong/react_practice/blob/main/part1/22_Form2.html)
 
 1. validation 체크는 onChange에서 하면 편리하다
 2. input 태그의 value를 리액트 컴포넌트에서 관리하는 것을 말한다.
 ___
-## 23.Error
+## Error handling
 다양한 에러들이 일어날 수 있으며 자바스크립트에 대한 에러가 리액트에서 나타날 수도 있다.
 > Source code : [Error 다루기](https://github.com/FdongFdong/react_practice/blob/main/part1/23_Error.html)
 
 1. class 컴포넌트로 ErrorBoundary를 만들어서 Error이 생기는 컴포넌트를 제어할 수 있다.
    - 함수형 컴포넌트로 만들지 못하는 이유는 에러를 처리하는 함수(getDerivedStateFromError())를 클래스 컴포넌트가 제공하기 때문이다.
 ___
-## 25, 26. key와 Rerendering 
+## key와 Rerendering 
 > Source code : [key와 Rerendering](https://github.com/FdongFdong/react_practice/blob/main/part1/26_key_rerendering.html)
 
 1. key는 value를 특정하는 이름이다.
@@ -139,7 +144,7 @@ ___
 3. index를 보통 사용하지만 index의 순서가 바뀔 수 있는 경우 사용하지 않는 것과 같은 결과를 보여준다.
 
 ___
-## 27. 상태 끌어올리기 (State lifting up)
+## 상태 끌어올리기 (State lifting up)
 > Source code : [상태 끌어올리기](https://github.com/FdongFdong/react_practice/blob/main/part1/27_state_lifting_up.html)
 
 1. 자식 컴포넌트의 상태 값을 부모 컴포넌트가 사용하려면 상태를 끌어올려야한다.(Lifting up)
