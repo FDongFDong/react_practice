@@ -1,17 +1,27 @@
 # React_practice
 
 ## PART 1: React 기초
-- [useState](#useState)
-- [useEffect](#useEffect)
-- [customHook](#customHook)
-- [Hookflow](#Hook-flow-1)
-- [Element 스타일 입히기](#Element-스타일-입히기)
-- [Ref로 DOM 다루기](#Ref로-DOM-다루기)
-- [Form 다루기 1](#Form-다루기-1)
-- [Error handling](#Error-handling)
-- [key와 Rerendering](#key와-Rerendering)
-- [상태 끌어올리기](#상태-끌어올리기)
-- [Data Fetch](#Data-Fetch)
+- [React_practice](#react_practice)
+  - [PART 1: React 기초](#part-1-react-기초)
+  - [PART 2: React 라이브러리](#part-2-react-라이브러리)
+    - [useState](#usestate)
+    - [useEffect](#useeffect)
+    - [customHook](#customhook)
+    - [Hook flow 1](#hook-flow-1)
+    - [Hook flow 2](#hook-flow-2)
+      - [clean up 적용](#clean-up-적용)
+  - [Element 스타일 입히기](#element-스타일-입히기)
+    - [Ref로 DOM 다루기](#ref로-dom-다루기)
+  - [Form 다루기 1](#form-다루기-1)
+    - [Form 다루기 2](#form-다루기-2)
+    - [Error handling](#error-handling)
+    - [key와 Rerendering](#key와-rerendering)
+    - [상태 끌어올리기](#상태-끌어올리기)
+    - [Data Fetch](#data-fetch)
+  - [PART 2: React 라이브러리](#part-2-react-라이브러리-1)
+    - [Date 다루기](#date-다루기)
+      - [Moment.js 사용하기](#momentjs-사용하기)
+      - [Day.js 사용하기](#dayjs-사용하기)
 
 ## PART 2: React 라이브러리
 - [Date 다루기](#Date-다루기)
@@ -181,3 +191,11 @@ ___
 3. 타임 존에 따른 날짜 및 시간 표기하기
 4. 날짜에 따른 요일 찾기
 5. 날짜 비교하기
+
+
+#### Day.js 사용하기
+
+- 사이즈가 moment.js 대비 상당히 작다
+- 문서도 정갈함
+- 간단한 기능들을 적용할 떄는 좋음 moment -> dayjs로 이름만 바꿔도 거의 동작함
+- Tree shaking은 안된다.
