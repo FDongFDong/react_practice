@@ -137,6 +137,6 @@ ___
 ___
 
 ## 28. Data Fetch
-> Source code : [Data Fetch]()
+> Source code : [Data Fetch](https://github.com/FdongFdong/react_practice/blob/main/part1/28_data_fetch.html)
 
 ___
