@@ -259,3 +259,19 @@ ___
 - as prop
 - Nesting components -> &(자신을) 커스터마이징 하기 좋음
 - emotion이 styled-component 보다 작고 빠르다
+
+
+#### sass
+[sass 홈페이지](https://sass-lang.com/)
+
+- 전처리기 중 하나 -> CSS의 확장
+- Sass / Scss 보다 CSS와 유사한 SCSS
+- Variables: $abc: ###; / $abc
+- Nesting: a { b { c } }
+- Modules: _abc.scss / @use 'abc'; abc.###
+- Minins: @mixin abc($type: x){} / @include abc; @include abc(z);
+- Extend/Inheritance: %abc {} / @extend %abc
+- Operators: + - * / %
+
+
+
