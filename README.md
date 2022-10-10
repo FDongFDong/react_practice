@@ -22,6 +22,7 @@
     - [Date-fns.js 사용하기](#date-fns)
   - [스타일링 라이브러리](#스타일링-라이브러리)
      - [styled-component 사용하기](#styled-component)
+     - [emotion css 사용하기](#emotion)
 
 ___
 ### useState
@@ -242,3 +243,19 @@ ___
 - Global Style : 전역 스타일을 줄 수 있다.
 - attrs : props addition
 - keyframes/ ThemeProvider : Animation / Theme
+
+___
+#### emotion
+[emotion 홈페이지](https://emotion.sh/docs/introduction)
+
+- react에 특화 -> @emotion/react
+- css props는 style props와 비슷하다
+- auto vendor-prefix / nested selectors / media queries
+- SSR with zero configuration 
+- Object Styles: css={{fontSize: 12}}
+- String Styles: css={css \`font-size: 12px\`}
+- styled-components와 유사한 기능 제공
+- Composing dynamic styles
+- as prop
+- Nesting components -> &(자신을) 커스터마이징 하기 좋음
+- emotion이 styled-component 보다 작고 빠르다
