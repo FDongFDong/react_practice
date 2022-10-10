@@ -238,3 +238,7 @@ ___
 - Automatic vendor prefixing
 - 스타일을 style 태그로 분리한다.
 - styled.{element}`` 형태로 사용한다.
+- & : 가상 엘리먼트, 가상 선택자
+- Global Style : 전역 스타일을 줄 수 있다.
+- attrs : props addition
+- keyframes/ ThemeProvider : Animation / Theme
