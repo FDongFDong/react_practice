@@ -216,7 +216,7 @@ ___
 ___
 
 ### 스타일링 라이브러리
-> Source code : [Date 다루기](https://github.com/FdongFdong/react_practice/tree/main/part2/styling)
+> Source code : [Style 다루기](https://github.com/FdongFdong/react_practice/tree/main/part2/styling)
 CSS의 문제점(React를 쓰면서)
 
 - Global Namespace: 글로벌 변수를 지양해야하는 JS와 대치
@@ -274,4 +274,15 @@ ___
 - Operators: + - * / %
 
 
+ 
+### UI 라이브러리
+> Source code : [UI library]()
 
+#### Ant Design
+
+- React 기반
+- Day.js 지원 
+- Typography 지원
+- Layout - 화면 구조를 간편하게 배치
+- 다양한 Component 복붙만으로 화면 구성 가능
+- 문서 - 익히기 쉬움
